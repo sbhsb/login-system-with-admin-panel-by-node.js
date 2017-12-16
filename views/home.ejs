@@ -1,0 +1,132 @@
+<html>
+
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.8.0/css/tachyons.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/animate.css@3.5.2/animate.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.8.0/css/tachyons.min.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-default mb0">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">MY WEBSITE</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="/">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li>
+            <a href="">About
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li>
+            <a href="/contact">Contact Us</a>
+          </li>
+        </ul>
+
+        
+        <ul class="nav navbar-nav navbar-right">
+          <% if(name == 'admin') {%>
+            <li>
+                <a href="/admin" class="white">Admin</a>
+              </li>
+              <li>
+                <a href="/logout" class="white">Logout</a>
+              </li>
+            
+          <!-- <li>
+            <a href="/login" class="white"><%= name %></a>
+          </li>
+          <li>
+            <a href="/logout" class="white">Logout</a>
+          </li> -->
+          <% } else if (name) { %>
+            <li style="margin-top:15px;"class="mr3 black"><%= name %></li>
+            <li class="hover"><a style="padding:0px; margine:0px;" class="w3 h3 w3-ns h3-ns br-100 mt1 mb0" href="/userdetails"><img class="w3 h3 w3-ns h3-ns br-100 mt1 mb0 mr2" src="/image"></a></li>
+            <li><a href="/logout" class="white">Logout</a></li>
+          <%} else{%>
+            <li>
+                <a href="/login" class="white">Login</a>
+              </li>
+              <li>
+                <a href="/register" class="white">Register</a>
+              </li>
+            <%}%>
+        </ul>
+
+        <!--<ul class="nav navbar-nav navbar-right">
+              <li><a href="login.php">Login</a></li>
+                        <li><a href="registration.php">Register</a></li>
+              </ul>-->
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron bg-navy white">
+    <div class="container">
+      <h1 class="display-3">About Us</h1>
+
+      <p class="white">Write something that you want about this login projectWrite something that you want about this login projectWrite something
+        that you want about this login projectWrite something that you want about this login projectWrite something that
+        you want about this login projectWrite something that you want about this login projectWrite something that you want
+        about this login projectWrite something that you want about this login projectWrite something that you want about
+        this login project</p>
+      <p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a>
+      </p>
+
+    </div>
+  </div>
+  <div class="container" <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <h2>Our Values</h2>
+        <p>Write something that you want about this login project Write something that you want about this login project Write
+          something that you want about this login project Write something that you want about this login projectWrite something
+          that you want about this login projectWrite something that you want about this login project</p>
+        <p>
+          <a class="btn btn-primary btn-lg" href="#" role="button">View Details &raquo;</a>
+        </p>
+      </div>
+      <!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <h2>Our Mission</h2>
+        <p>Write something that you want about this login projectWrite something that you want about this login projectWrite
+          something that you want about this login projectWrite something that you want about this login projectWrite something
+          that you want about this login projectWrite something that you want about this login project</p>
+        <p>
+          <a class="btn btn-primary btn-lg" href="#" role="button">View Details &raquo;</a>
+        </p>
+      </div>
+      <!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <h2>Our Vision</h2>
+        <p>Write something that you want about this login projectWrite something that you want about this login projectWrite
+          something that you want about this login projectWrite something that you want about this login projectWrite something
+          that you want about this login projectWrite something that you want about this login project</p>
+        <p>
+          <a class="btn btn-primary btn-lg" href="#" role="button">View Details &raquo;</a>
+        </p>
+      </div>
+      <!-- /.col-lg-4 -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <hr>
+
+</body>
+
+
+
+</html>

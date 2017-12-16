@@ -1,0 +1,35 @@
+<html>
+    <head>
+    <title>User information</title>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.8.0/css/tachyons.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body class="tc bg-navy">
+            <nav class="navbar navbar-default mb0">
+                    <div class="container-fluid">
+                      <div class="navbar-header">
+                        <a class="navbar-brand" href="#">MY WEBSITE</a>
+                      </div>
+                    
+                      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                          <li><a href="/">Home <span class="sr-only">(current)</span></a></li>
+                          <li><a href="">About <span class="sr-only">(current)</span></a></li>
+                          <li><a href="/contact">Contact Us</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                          <li><a href="/logout">Logout</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    </nav>
+        <div class="pa4 black-80 georgia bg-white center mt6 br3" style="width: 370px">
+        <img class="w4 h4 w5-ns h5-ns br-100" src="/image"><br>
+        First name:&nbsp;&nbsp;<label for=""><%= firstname %></label><br>
+        Last name:&nbsp;&nbsp;<label for=""><%= lastname %></label><br>
+        User name:&nbsp;&nbsp;<label for=""><%= username %></label><br>
+        Email:&nbsp;&nbsp;<label for=""><%= email %></label><br>
+        </div>
+    </body>
+    </html>
